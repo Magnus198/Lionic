@@ -69,6 +69,10 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    outline: 1px solid rgba(0, 0, 255, .3);
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -101,8 +105,22 @@ html {
     color: white;
     background-color: #3172b9;
     border-radius: 4px;
+    transition: background-color .3s ease;
     cursor: pointer;
 }
+
+.btn:hover {
+    background-color: blue;
+}
+
+.btn:active {
+    /* background-color: red; */
+    transform: translateY(1px);
+}
+
+/* .btn:focus {
+    background-color: green;
+} */
 
 .btn.btn-big {
     padding: 20px 60px;
@@ -140,6 +158,18 @@ html {
     height: 100%;
 }
 
+.logo {
+    margin-right: auto;
+}
+
+/* .logo:focus {
+    outline: 3px solid rgba(0, 0, 255, .3);
+} */
+
+/* .nav:hover {
+    background: red;
+} */
+
 .nav-list {
     display: flex;
     margin: auto;
@@ -152,6 +182,11 @@ html {
 
 .nav-link {
     color: #1c1c1c;
+    transition: color .3s ease;
+}
+
+.nav-link:hover {
+    color: #3172b9;
 }
 
 .nav-item.is-active .nav-link {
@@ -246,14 +281,35 @@ html {
     padding: 60px 30px;
     border: 1px solid #e4e4e4;
     border-radius: 5px;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 .section-do-item:not(:last-child) {
     margin-right: 30px;
 }
 
+.section-do-item:hover {
+    background-color: #3172b9;
+    color: white;
+    cursor: pointer;
+}
+
+.section-do-item:hover .section-do-item-description {
+    color: white;
+}
+
+.section-do-item:hover .section-do-icon path {
+    fill: white;
+}
+
 .section-do-icon {
     margin-bottom: 30px;
+}
+
+.section-do-icon path {
+    transition: fill .3s ease;
 }
 
 .section-do-item-heading {
@@ -261,7 +317,6 @@ html {
     font-size: 20px;
     line-height: 1;
     font-weight: 600;
-    color: #1c1c1c;
 }
 
 .section-do-item-description {
@@ -271,6 +326,7 @@ html {
     line-height: 21px;
     color: #787878;
     font-weight: 300;
+    transition: color .3s ease;
 }
 
 /* Our happy clients */
