@@ -574,3 +574,18 @@ html {
     color: #494949;
     background-image: url('../img/footer-mail.svg');
 }
+
+/* body {
+    min-width: 1200px;
+} */
+
+@media (max-width: 768px) {
+    .section-do-list {
+        display: block;
+    }
+
+    .section-do-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
