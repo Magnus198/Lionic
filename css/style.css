@@ -654,6 +654,46 @@ html {
     }
 }
 
+@media (max-width: 576px) {
+    .header-btn {
+        margin-left: 6px;
+    }
+
+    .section-hero-heading {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    .section-hero-description {
+        font-size: 8px;
+        margin-bottom: 0;
+    }
+
+    .section-clients-testimonial {
+        margin-bottom: -24px;
+    }
+
+    .section-clients-user {
+        margin-left: -14px;
+    }
+
+    .section-clients-username {
+        font-size: 14px;
+    }
+
+    .section-clients-user-decription {
+        font-size: 14px;
+    }
+
+    .phone {
+        margin-left: 165px;
+    }
+
+    .mail {
+        margin-left: 151px;
+    }
+}
+
 /* @media (orientation: portrait) {
     body {
         background-color: red;
@@ -671,4 +711,3 @@ html {
         display: none;
     }
 }
-
